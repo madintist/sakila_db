@@ -45,6 +45,7 @@ h2 {
 
 #home h2 {
   margin: -40px 0 0;
+  padding: 10px 0;
 }
 
 h3 {
@@ -114,4 +115,42 @@ li {
 
 span {
   color: red;
+}
+
+/* Navigation:*/
+
+ul#nav {
+  display: flex;
+  margin-top: 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+li.navItem {
+  list-style-type: none;
+  width: auto;
+  list-style-type: none;
+  width: auto;
+  border: 2px solid #5a6772;
+  padding: 0;
+  margin: 0 6px;
+}
+
+li.navItem a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  top: 9px;
+}
+
+li.navItem:hover {
+  transition: background-color 0.25s linear;
+  background-color: #5a6772;
+}
+
+li.navItem:hover a {
+  transition: color 0.25s linear;
+  color: #fff;
 }
