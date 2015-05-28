@@ -37,7 +37,8 @@ if (!empty($_GET['id'])) {
   <h2>
   <?php
     if ($film) {
-      echo $film["title"];
+      echo '<h3>'.$film["title"].'</h3>';
+      echo '<p>'.$film['description'].'</p>';
     } else {
       echo "Sorry, this film could not be found.";
     }
